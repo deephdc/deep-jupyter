@@ -1,22 +1,11 @@
-Debugging scripts
+Helping scripts for Jupyter Lab/Notebook
 =================
 
-debug_sysinfo.sh
+jupyter_notebook_config.py
 -----------------
-Script to collect information about the running system: 
-   * Hostname
-   * Linux release
-   * Current memory load
-   * Network interfaces
-   * Python version
-   * Nvidia card info (if present)
-   * Environment settings (skipping those with 'pAssWoRd')
+   Module to set Jupyter access password from the jupyterPASSWORD environment, if available.
+   BASED ON: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/jupyter_notebook_config.py
 
-debug_log.sh 
+run_jupyter.sh
 ------------
-Calls debug_sysinfo.sh + starts deepaas-run and uploads its logfile to the remote storage. It has two parameters:
-   * --deepaas_port - port used by DEEPaaS API (default is 5000)
-   * --remote_dir - remote directory to be used by rclone (rclone.org) to upload log files.
-       Must be given as e.g. "rshare:/Logs/", i.e. name of the remote share ("rshare"), and the remote directory ("/Logs/") with the slash "/" at the end.
-
-
+   Script to start jupyterlab, also checks jupyterCONFIG_URL environment for more advanced configuration (e.g. download of certificates)
