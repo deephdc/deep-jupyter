@@ -1,7 +1,10 @@
-**repository is frozen. These scripts can now be found in deephdc/deep-start**
+----
+repository is frozen. The scripts can now be found in deephdc/deep-start
+-----------------------------------------------------------------------
+----
 
 Helping scripts for Jupyter Lab/Notebook
-=================
+----------------------------------------
 
 jupyter_notebook_config.py
 -----------------
